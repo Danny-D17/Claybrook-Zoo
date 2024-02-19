@@ -35,6 +35,7 @@ Footer{
     color: white;
 }
 .image{
-    height:100%;
+    height:80%;
     width: 60%;
+    margin: 10%;
 }

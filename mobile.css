@@ -1,0 +1,64 @@
+body{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header"
+        "Nav Nav" 
+        "Main Aside"
+        "Footer Footer"
+    ;
+}
+header{
+    background-color: #014e2e;
+    grid-area: header;
+    color: white;
+}
+Nav{
+    background-color: yellow;
+    grid-area: Nav;
+    color: black;
+
+}
+Main{
+    background-color: darkblue;
+    grid-area: Main;
+    color: white;
+}
+Aside{
+    background-color: lightgreen;
+    grid-area: Aside;
+    color: black;
+}
+Footer{
+    background-color: green;
+    grid-area: Footer;
+    color: white;
+}
+.image{
+    height:100%;
+    width: 60%;
+}
+.showNav{
+    height: 0.8em;
+    width: 1.25em;
+    display: block;
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+}
+.showNav::before{
+    content: '';
+    position: absolute;
+    width: 1.25em;
+    margin-top: 0.3em;
+    border-top: 0.2em solid #fff;
+}
+nav{
+    display: block;
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+}
